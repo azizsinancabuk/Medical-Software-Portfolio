@@ -82,3 +82,34 @@ ID: NM_000546
 Length: ...
 
 First 50 bases: ...
+
+---
+
+# DNA to Protein Translation Tool
+
+This project provides a Python implementation for translating DNA sequences into their corresponding amino acid sequences. It demonstrates how to handle biological data using key-value mapping and string manipulation techniques.
+
+## Key Concepts Covered
+
+- **Python Dictionaries:** Utilizing key-value pairs for efficient codon-to-amino acid mapping.
+- **String Slicing:** Processing DNA sequences in triplet chunks (codons).
+- **Functions:** Modular code structure for reusability.
+- **Data Handling:** Graceful error handling for undefined codons using the `.get()` method.
+
+## How It Works
+
+The program reads a provided DNA sequence three bases at a time. It searches for each triplet (codon) in a predefined dictionary (`CODON_TABLE`) and concatenates the resulting amino acids into a final protein string.
+
+## Example
+
+**Input (DNA Sequence):**
+`ATGGCCATTGTA`
+
+**Translation Process:**
+* `ATG` ➔ `M`
+* `GCC` ➔ `A`
+* `ATT` ➔ `I`
+* `GTA` ➔ `V`
+
+**Output (Protein):**
+`MAIV`
