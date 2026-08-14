@@ -113,3 +113,32 @@ The program reads a provided DNA sequence three bases at a time. It searches for
 
 **Output (Protein):**
 `MAIV`
+
+---
+
+# DNA GC Content Calculator
+
+This project features a Python script designed to calculate the GC (Guanine-Cytosine) content of a given DNA sequence. GC content is a fundamental metric in genomics, often used to analyze the stability of a DNA molecule.
+
+## Key Concepts Covered
+
+- **String Iteration:** Using `for` loops to process a DNA sequence base by base.
+- **Conditional Logic:** Identifying specific nucleotides ('G' and 'C') within a sequence.
+- **Mathematical Operations:** Calculating percentages based on total sequence length.
+- **Bioinformatics Fundamentals:** Understanding and applying the concept of GC content algorithmically.
+
+## How It Works
+
+The program takes a DNA sequence as input and iterates through each character. It keeps a running count of every Guanine (G) and Cytosine (C) base. Finally, it divides this count by the total length of the sequence and multiplies by 100 to return the percentage.
+
+## Example
+
+**Input (DNA Sequence):**
+`AGCTATCGGC`
+
+**Calculation:**
+The sequence has a total length of 10 bases. It contains 6 'G' or 'C' bases.
+(6 / 10) * 100 = 60.0%
+
+**Output:**
+`GC Content: 60.0 %`
