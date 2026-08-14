@@ -38,9 +38,9 @@ ACCG
 
 Output:
 
-[2, 6]
+[1, 6]
 
-The pattern occurs at positions 2 and 6 in the text.
+The pattern occurs at positions 1 and 6 in the text (using 0-based indexing).
 
 ## How It Works
 
