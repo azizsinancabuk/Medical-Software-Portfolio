@@ -47,3 +47,38 @@ The pattern occurs at positions 2 and 6 in the text.
 The algorithm checks the pattern at every possible position in the text.
 It compares the characters one by one.
 If all characters match, the position is recorded.
+
+---
+
+# Biological Sequence Analysis with Biopython and NCBI
+
+This project demonstrates how to use the Biopython library to work with biological sequence data. 
+
+It utilizes the NCBI Entrez system to programmatically retrieve a DNA sequence and uses Biopython to parse and analyze the retrieved sequence.
+
+## Key Concepts Covered
+
+- Biopython library
+- NCBI Entrez database access
+- FASTA file processing
+- `SeqIO` module
+- DNA sequence analysis
+
+## How It Works
+
+The script performs the following operations:
+
+1. Connects to the NCBI database using Entrez.
+2. Retrieves a specific DNA sequence record.
+3. Reads and parses the sequence using Biopython.
+4. Outputs the sequence ID.
+5. Outputs the total sequence length.
+6. Displays the first 50 bases of the sequence.
+
+## Example Output
+
+ID: NM_000546
+
+Length: ...
+
+First 50 bases: ...
